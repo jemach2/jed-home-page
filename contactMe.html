@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="/Users/jedcharles/Desktop/projects/jed home page/resources/css/lightmode.css" rel="stylesheet" id="cssfile">
+
+        <div class="photoNav">
+
+            <button id="dmbutton">Dark Mode</button> 
+
+            <nav>
+                <p><a href="main.html">HOME</a></p>
+            </nav>
+        </div>
+
+    </head>
+
+<body>
+
+
+    <div class="contactMe">
+
+         <p><strong>Email: </strong>myemail@hotmail.com</p>
+         <br><br>
+         <p><strong>Mobile: </strong>555-111-2222</p>
+
+
+    </div>
+
+    <script>
+
+    document.getElementById('dmbutton').addEventListener('click', function() {
+        const css = document.getElementById('cssfile');
+        const dmb = document.getElementById('dmbutton');
+
+        if (dmb.innerHTML == 'Dark Mode') {
+            css.setAttribute('href', '/Users/jedcharles/Desktop/projects/jed home page/resources/css/darkmode.css');
+            dmb.innerHTML = 'Light Mode';
+        } else {
+            css.setAttribute('href', '/Users/jedcharles/Desktop/projects/jed home page/resources/css/lightmode.css');
+            dmb.innerHTML = 'Dark Mode';
+
+        }
+
+    });
+</script>
+
+</body>
+</html>

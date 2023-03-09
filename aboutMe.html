@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="/Users/jedcharles/Desktop/projects/jed home page/resources/css/lightmode.css" rel="stylesheet" id="cssfile">
+
+        <div class="photoNav">
+
+            <button id="dmbutton">Dark Mode</button> 
+
+            <nav>
+                <p><a href="main.html">HOME</a></p>
+            </nav>
+        </div>
+
+    </head>
+
+<body>
+
+<div class="edu">
+    <div class="aboutMe">
+        <p>Although I graduated from the University of Notre Dame with a BS in Aerospace Engineering, I never actually worked in the field. 
+        Indeed, I instead spent more than a decade teaching high School Mathematices after which I went into National Security with The Trinidad & Tobago government. 
+        These days I work from home mostly in customer service and and have recently got into coding. I also involve myself in an occasional community theatre production.</p>
+    </div>
+</div>
+
+
+
+</body>
+
+
+    <script>
+
+    document.getElementById('dmbutton').addEventListener('click', function() {
+        const css = document.getElementById('cssfile');
+        const dmb = document.getElementById('dmbutton');
+
+        if (dmb.innerHTML == 'Dark Mode') {
+            css.setAttribute('href', '/Users/jedcharles/Desktop/projects/jed home page/resources/css/darkmode.css');
+            dmb.innerHTML = 'Light Mode';
+        } else {
+            css.setAttribute('href', '/Users/jedcharles/Desktop/projects/jed home page/resources/css/lightmode.css');
+            dmb.innerHTML = 'Dark Mode';
+
+        }
+
+    });
+</script>
+
+</body>
+</html>

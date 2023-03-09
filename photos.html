@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="/Users/jedcharles/Desktop/projects/jed home page/resources/css/lightmode.css" rel="stylesheet" id="cssfile">
+
+        <div class="photoNav">
+
+            <button id="dmbutton">Dark Mode</button> 
+
+            <nav>
+                <p><a href="main.html">HOME</a></p>
+            </nav>
+        </div>
+
+    </head>
+
+<body>
+
+    <div class="photoHeader">
+        <h1>Photo Album</h1>
+    </div>
+
+    <div class="photoContainer">
+
+            <div class="karaoke">
+                <img src="/Users/jedcharles/Desktop/projects/jed home page/resources/images /karaoke.jpg">
+            </div>
+            <div class="merOne">
+                <img src="/Users/jedcharles/Desktop/projects/jed home page/resources/images /merchant of venice 1.jpg">
+            </div>
+            <div class="merThree">
+                <img src="/Users/jedcharles/Desktop/projects/jed home page/resources/images /merchant of venice 3.jpg">
+            </div>
+            <div class="party">
+                <img src="/Users/jedcharles/Desktop/projects/jed home page/resources/images /party copy.jpg">
+            </div>
+            <div class="sibsDinner">
+                <img src="/Users/jedcharles/Desktop/projects/jed home page/resources/images /sibs dining out.jpeg">
+            </div>
+
+    </div>
+<script>
+
+    document.getElementById('dmbutton').addEventListener('click', function() {
+        const css = document.getElementById('cssfile');
+        const dmb = document.getElementById('dmbutton');
+
+        if (dmb.innerHTML == 'Dark Mode') {
+            css.setAttribute('href', '/Users/jedcharles/Desktop/projects/jed home page/resources/css/darkmode.css');
+            dmb.innerHTML = 'Light Mode';
+        } else {
+            css.setAttribute('href', '/Users/jedcharles/Desktop/projects/jed home page/resources/css/lightmode.css');
+            dmb.innerHTML = 'Dark Mode';
+
+        }
+
+    });
+</script>
+
+</body>
+</html>
