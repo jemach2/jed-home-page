@@ -86,7 +86,7 @@ nav :hover {
     justify-content: center;
     width: 100%;
     height: auto;
-    background-image: url("/Users/jedcharles/Desktop/projects/jed home page/resources/images /poolside.jpeg");
+    background-image: url("resources/images/poolside.jpeg");
 }
 .sectionOne p {
     text-align: center;
